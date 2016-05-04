@@ -5,10 +5,12 @@ body {
 	height: 100%;
 	background: lightgrey;
 }
-p p {
+p .margin-down {
+	margin-bottom: 12px;
+}
+p .margin-up {
 	margin-top: 0px;
 }
-
 .wrapper {
 	width: inherit;
 	height: inherit;
@@ -39,5 +41,5 @@ img {
 	border-radius: 20%;
 }
 .dorder-down {
-	border-bottom: black;
+	border-bottom: solid black 2px;
 }
