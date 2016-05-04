@@ -1,30 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Gist
-
-    @alexplatinum2012
-
-1
-0
-
-    0
-
-alexplatinum2012/alexplatinum2012.github.io
-Code
-Issues 0
-Pull requests 0
-Wiki
-Pulse
-Graphs
-Settings
-alexplatinum2012.github.io/css/main.css
-e1215ee 14 hours ago
-@alexplatinum2012 alexplatinum2012 3
-38 lines (36 sloc) 603 Bytes
 body {
 	margin: 0;
 	padding: 0;
@@ -60,10 +33,8 @@ body {
 	width: 20%;
 }
 img {
-	border-radius: 80%;
+	border-radius: 20%;
 }
-
-    Status API Training Shop Blog About 
-
-    © 2016 GitHub, Inc. Terms Privacy Security Contact Help 
-
+.dorder-down {
+	border-bottom: solid black;
+}
