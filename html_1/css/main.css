@@ -5,10 +5,10 @@ body {
 	height: 100%;
 	background: lightgrey;
 }
-p .margin-down {
+.margin-down {
 	margin-bottom: 12px;
 }
-p .margin-up {
+.margin-up {
 	margin-top: 0px;
 }
 .wrapper {
