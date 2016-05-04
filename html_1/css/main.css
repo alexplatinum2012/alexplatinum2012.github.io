@@ -41,5 +41,5 @@ img {
 	border-radius: 20%;
 }
 .border-down {
-	border-bottom: black;
+	border-bottom: 2px solid black;
 }
