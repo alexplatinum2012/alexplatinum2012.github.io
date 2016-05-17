@@ -4,16 +4,112 @@
 }
 body {
   background-color: #f9f9f9;
-  padding-left: 154px;
-  padding-right: 154px;
+  padding: 0px 154px;
 }
-div #wrapper {
-  background-color: #ff5fff;
+div#wrapper {
+  display: block;
+  position: relative;
+  height: 100%;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  padding: 0px 46px;
+  background-color: #ffffff;
 
 }
 /* header*/
-header #header {
-  background-color: #ff5fff;
+header#header {
+  display: block;
+  position: relative;
+  height: 120px;
+  padding: 50px 0px 0px;
 }
 /* header*/
+div.logo {
+  height: 40px;
+  margin: 0px 0px 40px;
+  padding: 0;
+}
+
 /* header*/
+div#main_menu {
+  display: block;
+  height: 40px;
+
+}
+ul.inline_main_menu {
+  margin: 0px;
+  padding: 0px;
+  height: 40px;
+  background-image: url(../img/bg-main-menu.png);
+  background-repeat: repeat-x;
+}
+ul.inline_main_menu > li {
+  display:inline-block;
+  list-style: none;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+}
+ul.inline_main_menu > li > a {
+  display: block;
+  height: 12px;
+  padding: 14px;
+  text-decoration: none;
+  text-shadow: 1px 0px 1px rgba(0,0,0,0.5);
+  font-family: sans-serif;;
+  color: white;
+  font-size: 11px;
+}
+ul.inline_main_menu > li:hover {
+  background-image: url(../img/bg-main-menu-active.png);
+  background-repeat: repeat-x;
+  width: 100px;
+  border: 0px 1px;
+  border-color: #838383;
+}
+div#free_space {
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+div#sidebar {
+  display: block;
+  position: relative;
+  width: 238px;
+  border-left: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+}
+ul.sidebar_menu {
+  list-style: none;
+  display: block;
+}
+ul.sidebar_menu > li{
+  border-bottom: 1px solid #c8c8c8;
+  width: 238px;
+  height: 39px;
+}
+ul.sidebar_menu > li:last-child {
+  border-bottom: 0px;
+}
+ul.sidebar_menu > li > a {
+  padding: 10px 0px 20px 23px;
+  height: 9px;
+  display: block;
+  width: 100%-23px;
+  text-decoration: none;
+  color: #656363;
+}
+ul.sidebar_menu > li > a:hover {
+  padding-left: 35px;
+  background-color: #f9f9f9;
+  color: #2c2c2c;
+  width:100%-35px;
+}
+div#content {
+  display: block;
+  position: relative;
+  float: left;
+}
+.clr {
+  clear: both;
+}
