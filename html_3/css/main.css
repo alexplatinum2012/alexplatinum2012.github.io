@@ -5,10 +5,9 @@
 body {
   background-color: #f9f9f9;
   padding: 0px 154px;
+  font-family: sans-serif, "Open-sans", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial;
 }
 div#wrapper {
-  display: block;
-  position: relative;
   height: 100%;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
   padding: 0px 46px;
@@ -17,8 +16,6 @@ div#wrapper {
 }
 /* header*/
 header#header {
-  display: block;
-  position: relative;
   height: 120px;
   padding: 50px 0px 0px;
 }
@@ -31,7 +28,6 @@ div.logo {
 
 /* header*/
 div#main_menu {
-  display: block;
   height: 40px;
 
 }
@@ -52,12 +48,10 @@ ul.inline_main_menu > li {
 ul.inline_main_menu > li > a {
   display: block;
   height: 12px;
-  padding: 14px;
+  padding: 10px;
   text-decoration: none;
   text-shadow: 1px 0px 1px rgba(0,0,0,0.5);
-  font-family: sans-serif;;
   color: white;
-  font-size: 11px;
 }
 ul.inline_main_menu > li:hover {
   background-image: url(../img/bg-main-menu-active.png);
@@ -67,12 +61,14 @@ ul.inline_main_menu > li:hover {
   border-color: #838383;
 }
 div#free_space {
-  display: block;
   height: 40px;
   width: 100%;
 }
-div#sidebar {
-  display: block;
+div#container {
+  height: 100%;
+  width: 100%;
+}
+section#sidebar {
   position: relative;
   width: 238px;
   border-left: 1px solid #c8c8c8;
@@ -105,10 +101,9 @@ ul.sidebar_menu > li > a:hover {
   color: #2c2c2c;
   width:100%-35px;
 }
-div#content {
-  display: block;
-  position: relative;
+section#content {
   float: left;
+  padding-left: 48px;
 }
 .clr {
   clear: both;
