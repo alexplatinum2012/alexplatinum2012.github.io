@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  position: relative;
+  height: 0;
+}
+div#wrapper {
+  width: 1280px;
+  height: 1060px;
+}
+
+div.left_background {
+  width: 100%;
+  float: left;
+  background-color: blue;
+  position: relative;
+  right: 30%;
+
+}
+div.center_background {
+  width: 100%;
+  float: left;
+  position: relative;
+  right: 40%;
+  background-color: violet;
+}
+div.right_background {
+  width: 100%;
+  float: left;
+  background-color: red;
+}
+div.left_column {
+  width: 30%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  left: 70%;
+}
+div.center_column {
+  width: 30%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  left: 70%;
+}
+div.right_column {
+  width: 39%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  left: 70%;
+}
