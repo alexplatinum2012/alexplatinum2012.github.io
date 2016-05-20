@@ -10,7 +10,7 @@
   height: 0;
 }
 body {
-  width: 1280px;
+  width: 980px;
   padding: 0px 150px;
   background-image: url(../img/background.jpg);
   font-family: sans-serif, "Open-sans", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial;
@@ -44,15 +44,15 @@ div.logo_text {
 div.header_contacts {
   color: #329ab3;
   position: absolute;
-  right: 168px;
-  top: 52px;
+  right: 68px;
+  top: 12px;
 }
 div.header_links {
   width: 425px;
   height: 50px;
   position: absolute;
-  right: 95px;
-  top: 150px;
+  right: 0;
+  top: 100px;
 }
 div.header_links > img {
   margin: 0px 8.5px;
