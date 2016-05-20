@@ -29,7 +29,7 @@ div#wrapper {
   overflow: hidden;
 }
 header {
-
+  position: relative;
 }
 div.logo {
   margin-left: 28px;
