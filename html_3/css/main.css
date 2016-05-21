@@ -20,6 +20,12 @@ header#header {
   height: 120px;
   padding: 50px 0px 0px;
 }
+.clearfix::after {
+  content: '';
+  position: relative;
+  display: block;
+  clear: both;
+}
 /* header*/
 div.logo {
   height: 40px;
@@ -30,40 +36,36 @@ div.logo {
 /* header*/
 div.main_menu {
   height: 40px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, lightgrey, grey);
 }
-ul.inline_main_menu {
-  height: 40px;
-  background-image: url(../img/bg-main-menu.png);
-  background-repeat: repeat-x;
-}
+
 ul.inline_main_menu > li {
-  display:inline-block;
   list-style: none;
-  height: 40px;
-  width: 98px;
-  border-left: 1px hidden #838383;
-  border-right: 1px hidden #838383;
-  text-align: center;
+  float: left;
+  height: 100%;
+  width: 100px;
 }
 ul.inline_main_menu > li.active {
-  background-image: url(../img/bg-main-menu-active.png);
-  background-repeat: repeat-x;
+  background: linear-gradient(to bottom, grey, black);
   width: 100px;
 }
 ul.inline_main_menu > li > a {
   display: block;
-  height: 12px;
-  padding: 10px;
+  height: 100%;
+  width: 100%;
+  padding: 10% 0px;
+  text-align: center;
   text-decoration: none;
   text-shadow: 1px 0px 1px rgba(0,0,0,0.5);
   color: white;
 }
 ul.inline_main_menu > li:hover {
-  background-image: url(../img/bg-main-menu-active.png);
-  background-repeat: repeat-x;
+  background: linear-gradient(to bottom, grey, black);
   width: 98px;
-  border-left: 1px solid #838383;
-  border-right: 1px solid #838383;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
 div.free_space {
   height: 40px;
@@ -76,6 +78,7 @@ div#container {
 }
 div.sidebar {
   position: relative;
+  overflow: hidden;
   float: left;
   width: 238px;
   border-left: 1px solid #c8c8c8;
@@ -94,7 +97,6 @@ ul.sidebar_menu > li > a.active {
   padding-left: 35px;
   background-color: #f9f9f9;
   color: #2c2c2c;
-  width:100%-35px;
 }
 ul.sidebar_menu > li > a {
   padding: 10px 0px 20px 23px;
