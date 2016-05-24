@@ -13,7 +13,7 @@ body {
   width: 980px;
   padding: 0px 150px;
   background-image: url(../img/background.jpg);
-  font-family: sans-serif, "Open-sans", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial;
+  font-family: 'Open Sans', sans-serif, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial;
   font-size: 12px;
 }
 div.google_head {
@@ -38,8 +38,8 @@ div.logo {
 div.logo_text {
   color: #329ab3;
   position: absolute;
-  left: 250px;
-  top: 140px;
+  left: 100px;
+  top: 95px;
 }
 div.header_contacts {
   color: #329ab3;
@@ -65,7 +65,9 @@ div.header_links > p > a {
   margin: 0px 10px;
 }
 div.header_links > p > a:nth-child(5) {
-  margin-left: 2px;
+  margin-left: -15px;
+  margin-right: -19px;
+  width: 88px;
 }
 div.header_links > p > a:nth-child(6) {
   margin-left: 10px;
@@ -75,6 +77,32 @@ div.photo {
   height: 236px;
   border-top: 1px solid #128aa7;
   border-bottom: 1px solid #128aa7;
+}
+div.panel {
+  position: relative;
+  width: 100%;
+  background-color: #363636;
+  border-bottom: 1px solid #000;
+  list-style: none;
+}
+ul.panel_nav_menu > li {
+  display: block;
+  float: left;
+  margin: 0px 33px;
+}
+ul.panel_nav_menu > li > a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  height: 100%;
+  padding: 0px -33px;
+  float: left;
+}
+div.triangle_panel_nav_menu {
+  float: left;
+  margin-left: 6px;
+  line-height: 20px;
 }
 div.left_background {
   width: 100%;
