@@ -160,7 +160,7 @@ ul.inline_footer_menu > li > a {
   text-decoration: none;
   color: #2c2c2c;
 }
-div.float_right {
+p.float_right {
   float: right;
 }
 .clr {
