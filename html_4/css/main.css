@@ -19,13 +19,6 @@ body {
   font-family: sans-serif, "Open-sans", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial;
   font-size: 12px;
 }
-div.google_head {
-  margin-left: -150px;
-  margin-right: -150px;
-  height: 38px;
-}
-div.google_head > img {
-}
 div#wrapper {
   width: 1000px;
   background-color: #ffffff;
@@ -85,7 +78,6 @@ div.photo {
 div.header_nav_panel {
   height: 30px;
   background-color: #323232;
-  border-bottom: 1px solid #000;
   position: relative;
 }
 ul.nav_panel > li {
@@ -115,7 +107,7 @@ div.submenu {
   visibility: hidden;
   position: absolute;
   left: 33px;
-  top: 31px;
+  top: 30px;
   padding-left: 3px;
   padding-right: 10px;
   background-color: #323232;
@@ -146,7 +138,6 @@ div.left_background {
   background-color: #edeef0;
   position: relative;
   right: 50%;
-  border-right: 1px solid c7cacf;
 }
 div.left_column > p.text_center {
   color: #424c43;
@@ -163,7 +154,6 @@ div.center_background {
   position: relative;
   right: 25%;
   background-color: #fff;
-  border-right: 1px solid c7cacf;
 }
 div.right_background {
   width: 100%;
