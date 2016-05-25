@@ -138,6 +138,7 @@ ul.inline_footer_menu {
   margin: 0px;
   padding: 0px;
   height: 40px;
+  float: left;
 }
 ul.inline_footer_menu > li {
   display:inline-block;
