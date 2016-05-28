@@ -38,7 +38,7 @@ div.main_menu {
   height: 40px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to bottom, lightgrey, grey);
+  background: linear-gradient(to bottom, #5e5e5e, #454444);
 }
 
 ul.inline_main_menu > li {
