@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'texgyreheroscnregular';
+    src: url('../fonts/TeX-Gyre-Heros/texgyreheroscn-regular-webfont.woff2') format('woff2'),
+         url('../fonts/TeX-Gyre-Heros/texgyreheroscn-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +22,8 @@ body {
   background-repeat: no-repeat;
   height: 1064px;
   width: 1215px;
-  font-family: Tahoma, sans-serif;
+  font-family: 'texgyreheroscnregular', Tahoma, sans-serif;
+  font-weight: 200;
 }
 div#wrapper {
   width: 1215px;
