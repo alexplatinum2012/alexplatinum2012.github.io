@@ -9,18 +9,22 @@
     <div id="wrapper">
 
     <header class="clearfix">
-      <div class="fl_right">
-        div1
+      <div class="fl_right active">
+        Ola! Entrar ou Cadastre-se
       </div>
       <div class="fl_right">
-        div2
+        <img src="img/invent-icon.png" alt="invent icon" />
+        Minhas ofertas
+      </div>
+      <div class="border fl_right">
+          &nbsp;
       </div>
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
+        <li><a href="#">Ajudo</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Forum</a></li>
+        <li class="active"><a href="#">Vender</a></li>
+        <li><a href="#">Meu Youbike</a></li>
       </ul>
     </header>
     <section>
@@ -32,16 +36,56 @@
       <div class="content">
         <div class="facebook clearfix">
             <img src="img/facebook-button.png" alt="" />
-            <div class="text_ou">
-
             </div>
+            <div class="left_second_line">
+              &nbsp;
+              <div class="left_first_line">
+                &nbsp;
+              </div>
+            </div>
+            <div class="text_ou">
+              OU
+            </div>
+            <div class="right_second_line">
+              &nbsp;
+              <div class="right_first_line">
+                &nbsp;
+              </div>
         </div>
         <div class="form">
-          sfgfdsgfgfg
+          <form class="content_form" action="index.html" method="post">
+            <div class="input">
+              <input type="text" name="first_name" placeholder="First name" required="required">
+            </div>
+            <div class="input">
+              <input type="text" name="last_name" placeholder="Last name" required="required">
+            </div>
+            <div class="input">
+              <input type="email" name="email_addr" placeholder="E-mail address" required="required">
+            </div>
+            <div class="input">
+              <input type="password" name="pass" placeholder="Choose password" required="required">
+            </div>
+            <div class="input">
+              <input type="password" name="pass_confirm" placeholder="Password confirm" required="required">
+            </div>
+            <div class="input clearfix">
+              <input type="checkbox" name="check" id="check" value="" required="required">
+              <label for="check">Send me Youbike updates and tips</label>
+            </div>
+            <div class="submit_button">
+              <input type="submit" id="submit" name="submit_button" value="Create my Account">
+            </div>
+          </form>
         </div>
-      </div>
-      <div class="footer">
-
+        <div class="footer">
+          <p>
+            By clicking the button above, you agree to the Terms of Service
+          </p>
+          <p>
+            Xiew our Privacy Policy.
+          </p>
+        </div>
       </div>
     </section>
   </div>
