@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  width: 495px;
+  height: 555px;
+}
+table, tr, td {
+  border: 10px solid #000;
+}
+tr {
+  height: 55px;
+}
+td {
+  width: 55px;
+}
+td.yellow {
+  background-color: #fff96a;
+}
+td.orange {
+  background-color: #ff5e46;
+}
+td.black {
+  background-color: #000;
+}
+td.blue {
+  background-color: #02417e;
+}
