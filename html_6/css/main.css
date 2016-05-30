@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+}
+div.wrapper {
+  max-width: 909px;
+  align-self: auto;
+}
+header {
+
+}
