@@ -4,11 +4,72 @@
 }
 body {
   background-color: #fff;
+  font-family: arial, sans-serif;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  position: relative;
+  height: 0;
 }
 div.wrapper {
   max-width: 909px;
   align-self: auto;
+  margin: 0px 14%;
 }
 header {
 
+}
+div.upper_block {
+  padding: 15px 0px 6px;
+}
+
+div.logo_phone {
+  float: left;
+  background-color: #0d3559;
+  background: linear-gradient (to bottom, #0d3559, #1f6786);
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  margin: 0px 6px;
+}
+div.phone_numbers {
+  color: #ccc;
+  font-size: 18px;
+  margin-right: 12px;
+  float: left;
+}
+div.registration_form {
+  float: left;
+  border-radius: 4px;
+  background: linear-ggradient (to top, #0d3458, #1f6685);
+  background-color: #0d3458;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+  height: 26px;
+  line-height: 21px;
+}
+div.logo_form {
+  float: left;
+  margin-left: 7px;
+  margin-top: 3px;
+}
+form.reg {
+  float: left;
+  margin-left: 4px;
+}
+p.enter {
+  display: block;
+  float: left;
+  margin-left: 8px;
+  border-right: 1px solid #ccc;
+  font-size: 11px;
+  font-family: "Lucida Sans Unicode Regular";
+}
+p.registration {
+  display: block;
+  float: left;
 }
