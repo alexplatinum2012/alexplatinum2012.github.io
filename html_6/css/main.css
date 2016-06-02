@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'lucida_sans_unicoderegular';
+  src: url('lucida_sans_unicode_regular-webfont.woff2') format('woff2'), url('lucida_sans_unicode_regular-webfont.woff') format('woff');
+  font-weight: normal;font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +28,7 @@ header {
 }
 div.upper_block {
   padding: 15px 0px 6px;
+  position: relative;;
 }
 
 div.logo_phone {
@@ -42,34 +48,63 @@ div.phone_numbers {
   float: left;
 }
 div.registration_form {
-  float: left;
   border-radius: 4px;
-  background: linear-ggradient (to top, #0d3458, #1f6685);
-  background-color: #0d3458;
-  -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.75);
-  height: 26px;
-  line-height: 21px;
+background: linear-ggradient (to top, #0d3458, #1f6685);
+background-color: #0d3458;
+-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+height: 26px;
+line-height: 25px;
+font-size: 14px;
+font-family: "lucida_sans_unicoderegular";
+position: absolute;
+left: 314px;
+top: 11px;
 }
 div.logo_form {
   float: left;
   margin-left: 7px;
-  margin-top: 3px;
+  margin-top: 5px;
 }
+
 form.reg {
   float: left;
+  margin-left: 4px;
+}
+form.reg:first-child {
+  height: 14px;
+  width: 107px;
+  padding-left: 4px;
+  font-size: 11px;
+}
+form.reg:last-child {
+  font-size: 11px;
+  height: 14px;
+  width: 106px;
+  padding-left: 5px;
   margin-left: 4px;
 }
 p.enter {
   display: block;
   float: left;
+  color: #fff;
   margin-left: 8px;
   border-right: 1px solid #ccc;
   font-size: 11px;
-  font-family: "Lucida Sans Unicode Regular";
+  font-family: "lucida_sans_unicoderegular";
 }
 p.registration {
   display: block;
   float: left;
+  color: #fff;
+}
+p.forgot_password {
+  display: block;
+  float: left;
+  margin-left: 10px;
+  color: #bfbfbf;
+  text-decoration: underline;
+  font-size: 12px;
+  font-family: "lucida_sans_unicoderegular";
 }
