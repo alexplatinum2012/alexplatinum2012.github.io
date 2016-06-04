@@ -18,13 +18,135 @@
                   <input type="text" placeholder="логин" name="login">
                   <input type="password" placeholder="пароль" name="password">
                 </form>
-                <p class="enter">вход</p>
-                <p class="registration">регистрация</p>
-                <p class="forgot_password">Забыли пароль?</p>
+                <nav>
+                  <a href="#" class="enter">вход</a> | <a href="#" class="registration">регистрация</a><a href="#" class="forgot_password">Забыли пароль?</a>
+                </nav>
+            </div>
+            <div class="navi">
+                <img src="img/home.png" alt="">
+                <img src="img/map.png" alt="">
+                <img src="img/mail.png" alt="">
             </div>
         </div>
         <img src="img/header_bg_img.png" alt="" />
-        &nbsp;
+        <div class="menu clearfix">
+            <menu>
+              <li class="menu"><a href="#">О компании</a></li>
+              <li class="menu"><a href="#">Оплата</a></li>
+              <li class="menu"><a href="#">Доставка</a></li>
+              <li class="menu"><a href="#">Статьи</a></li>
+              <li class="menu"><a href="#">Контакты</a></li>
+            </menu>
+            <div class="trash">
+              <img src="img/trash.png" alt="" />
+              <p class="text">Товаров: </p>
+              <p class="digit">0</p>
+              <p class="text">На сумму: </p>
+              <p class="digit">0.00 грн.</p>
+            </div>
+        </div>
+        <div class="finder">
+          <div class="find_po_avto">
+              <p class="title">Поиск по автомобилю</p>
+              <div class="left_form">
+                <p class="head_info">Диски: </p>
+                  <form id="form_1" class="" action="index.html" method="post">
+                  </form>
+                  <div class="select_holder clearfix">
+                    <p>Марка</p>
+                    <select form="form_1" class="sel" name="vendor[]">
+                      <option selected value=""></option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                  </div>
+
+                  <div class="select_holder clearfix">
+                    <p>Модель</p>
+                    <select form="form_1" class="" name="model[]">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                  </div>
+                  <div class="select_holder clearfix">
+                    <p>Год выпуска</p>
+                    <select form="form_1" class="" name="year[]">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                  </div>
+                  <div class="select_holder clearfix">
+                    <p>Комплектация</p>
+                    <select form="form_1" class="" name="complectation[]">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="right_form">
+                  <form class="" action="index.html" method="post">
+
+                  </form>
+              </div>
+          </div>
+          <div class="find_tires clearfix">
+              <p class="title">Поиск шин</p>
+              <div class="p_holder">
+                  <p>khgsjkj</p>
+              </div>
+              <div class="select_holder1">
+                <div class="select">
+                  <select form="form_1" class="" name="complectation[]">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+              </div>
+              <div class="button_area">&nbsp</div>
+          </div>
+          <div class="find_disk">
+              <p class="title">Поиск дисков</p>
+              <div class="form">
+                  <form class="" action="index.html" method="post">
+
+                  </form>
+              </div>
+          </div>
+        </div>
       </header>
     </div>
   </body>

@@ -1,8 +1,9 @@
 @font-face {
   font-family: 'lucida_sans_unicoderegular';
-  src: url('lucida_sans_unicode_regular-webfont.woff2') format('woff2'), url('lucida_sans_unicode_regular-webfont.woff') format('woff');
+  src: url('../fonts/lucida_sans_unicode_regular-webfont.woff2') format('woff2'), url('../fonts/lucida_sans_unicode_regular-webfont.woff') format('woff');
   font-weight: normal;font-style: normal;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -18,16 +19,22 @@ body {
   position: relative;
   height: 0;
 }
+
+/* WRAPPER */
+
 div.wrapper {
   max-width: 909px;
   align-self: auto;
   margin: 0px 14%;
 }
+
+/* header */
+
 header {
 
 }
 div.upper_block {
-  padding: 15px 0px 6px;
+  padding: 15px 0px 10px;
   position: relative;;
 }
 
@@ -85,6 +92,10 @@ form.reg:last-child {
   padding-left: 5px;
   margin-left: 4px;
 }
+nav {
+  display: block;
+  float: left;
+}
 p.enter {
   display: block;
   float: left;
@@ -107,4 +118,105 @@ p.forgot_password {
   text-decoration: underline;
   font-size: 12px;
   font-family: "lucida_sans_unicoderegular";
+}
+div.navi {
+  position: absolute;
+  right: 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* HEADER NAVIGATION MENU */
+
+menu > li {
+  display: block;
+  float: left;
+  list-style: none;
+}
+menu > li > a {
+  text-decoration: none;
+  height: 100%;
+}
+div.menu > div.trash {
+  float: right;
+}
+div.menu > div.trash > img, div.menu > div.trash > p {
+  display: block;
+  float: left;
+}
+
+/* HEADER FINDER BLOCKS */
+
+div.find_po_avto, div.find_tires, div.find_disk {
+  position: relative;
+  float: left;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  padding: 10px;
+}
+p.title {
+    position: absolute;
+}
+div.select_holder {
+
+}
+div.select_holder > p {
+  display: block;
+  float: left;
+}
+.sel {
+  background: url(../img/select-triangle.png) no-repeat right #fff;
+}
+div.select_holder > select {
+  display: block;
+  float: right;
+  -webkit-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
+  width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+/*test*/
+
+
+div.p_holder {
+  float: left;
+}
+div.select_holder1 {
+  float: left;
+  width: 102px;
+  height: 17px;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
+}
+div.button_area {
+  background: url(../img/select-triangle.png) no-repeat center #fff;
+  height: 17px;
+  width: 17px;
+  border: 1px solid grey;
+}
+div.select_holder1 select {
+  background: transparent;
+  width: 120%;
+  height: 100%;
 }
