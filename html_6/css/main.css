@@ -80,12 +80,16 @@ form.reg {
   margin-left: 4px;
 }
 form.reg:first-child {
+  display: block;
+  float: left;
   height: 14px;
   width: 107px;
   padding-left: 4px;
   font-size: 11px;
 }
 form.reg:last-child {
+  display: block;
+  float: left;
   font-size: 11px;
   height: 14px;
   width: 106px;

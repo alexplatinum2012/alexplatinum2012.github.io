@@ -16,6 +16,7 @@ body {
   width: 980px;
   padding: 0px 150px;
   background-image: url(../img/background.jpg);
+  background-size: cover;
   font-family: 'Open Sans', sans-serif, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial;
   font-size: 12px;
 }
@@ -26,6 +27,7 @@ div#wrapper {
   -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow:    0px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow:         0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  margin: 0px 14%;
 }
 header {
   position: relative;
