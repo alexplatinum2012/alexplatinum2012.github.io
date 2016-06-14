@@ -19,7 +19,7 @@
 }
 body {
   background-image: url(../img/background.png);
-  background-size: auto;
+  background-size: 100%;
   height: 1064px;
   width: 1215px;
   font-family: 'texgyreheroscnregular', Tahoma, sans-serif;
@@ -27,7 +27,7 @@ body {
 }
 div#wrapper {
   width: 1215px;
-
+  margin: 0px auto;
 }
 .clearfix:after {
   content: '';
