@@ -19,7 +19,7 @@
 }
 body {
   background-image: url(../img/background.png);
-  background-repeat: no-repeat;
+  background-size: auto;
   height: 1064px;
   width: 1215px;
   font-family: 'texgyreheroscnregular', Tahoma, sans-serif;
@@ -187,6 +187,16 @@ div.input > input {
   color: #ccc;
 }
 div.input > input:hover {
+  /* DO NOT WORKING */
+  background: linear-gradient(top, #1b5286, #1d4a75);
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(67,126,170,1);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(67,126,170,1);
+  box-shadow: 0px 0px 50px 0px rgba(67,126,170,1);
+  border-bottom: 1px solid #689bcc;
+  /*-----------------------*/
+  background-color: #1b5288;
+}
+div.input > input:active {
   /* DO NOT WORKING */
   background: linear-gradient(top, #1b5286, #1d4a75);
   -webkit-box-shadow: 0px 0px 50px 0px rgba(67,126,170,1);
