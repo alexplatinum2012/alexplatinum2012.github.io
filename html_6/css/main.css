@@ -170,6 +170,7 @@ div.finder {
 
 
 div.find_po_avto, div.find_tires, div.find_disk {
+  float: left;
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 10px;
   background-color: #fff;
@@ -178,9 +179,15 @@ div.find_po_avto, div.find_tires, div.find_disk {
   box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
   padding: 10px;
 }
-
-
+div.left_form {
+  float: left;
+}
+div.right_form {
+  float: right;
+}
 div.p_holder {
+  display: block;
+  float: left;
   font-size: 10px;
 }
 div.line > div.first > p {
@@ -230,6 +237,7 @@ div.select_holder {
   float: left;
 }*/
 div.select_holder {
+  float: right;
   width: 102px;
   height: 17px;
   overflow: hidden;
@@ -243,12 +251,17 @@ div.select_holder > select {
   width: 115%;
   background: transparent;
 }
-
+div.button_holder {
+  float: right;
+}
 div.button_holder > button {
   background: none;
   text-decoration: underline;
   color: grey;
   border: none;
+}
+div.checkbox_holder {
+  float: right;
 }
 
 

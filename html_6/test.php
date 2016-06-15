@@ -1,7 +1,6 @@
 <?php
-var test = _POST[s_vendor];
-echo test;
 
-
+var test = _POST['s_vendor'];
+echo "Марка - ".test;
 
 ?>
