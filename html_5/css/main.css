@@ -130,7 +130,7 @@ div.content {
   padding: 0px 142px;
   margin-top: 2px;
 }
-div.facebook {
+/*div.facebook {
   position: relative;
   padding-top: 33px;
 }
@@ -140,7 +140,60 @@ div.facebook > img:hover {
   -moz-box-shadow: 0px 0px 50px 0px rgba(67,126,170,1);
   box-shadow: 0px 0px 10px 0px rgba(67,126,170,1);
 
+}*/
+div.facebook2 {
+  position: relative;
+  margin-top: 33px;
 }
+div.facebook2:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(67,126,170,1);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(67,126,170,1);
+  box-shadow: 0px 0px 10px 0px rgba(67,126,170,1);
+}
+div.left_face {
+  float: left;
+  height: 34px;
+  width: 37px;
+  border-radius: 5px 0px 0px 5px;
+  border-right: 1px solid #223c6f;
+  border-top: 1px solid #7a88b5;
+  background-color: #334b8b;
+  text-align: center;
+  line-height: 20%;
+}
+div.left_face > img {
+  margin-top: 6px;
+}
+div.right_face {
+  float: left;
+  height: 34px;
+  width: 237px;
+  border-radius: 0px 5px 5px 0px;
+  border-left: 1px solid #7a88b5;
+  border-top: 1px solid #7a88b5;
+  background-color: #334b8b;
+}
+div.right_face > p {
+  display: block;
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: white;
+}
+div.right_face > p:first-child {
+  margin-left: 32px;
+}
+div.right_face > p:nth-child(2) {
+  font-weight: normal;
+  color: white;
+  margin-left: 8px;
+}
+div.right_face > p:last-child {
+  margin-left: 20px;
+}
+
 div.left_first_line {
   width: 100%;
   border-bottom:1px solid #666;
