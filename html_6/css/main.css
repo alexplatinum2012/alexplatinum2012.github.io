@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'lucida_sans_unicoderegular';
   src: url('../fonts/lucida_sans_unicode_regular-webfont.woff2') format('woff2'), url('../fonts/lucida_sans_unicode_regular-webfont.woff') format('woff');
-  font-weight: normal;font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -11,6 +12,14 @@
 body {
   background-color: #fff;
   font-family: arial, sans-serif;
+}
+.float_left {
+  display: block;
+  float: left;
+}
+.float_right {
+  display: block;
+  float: right;
 }
 .clearfix:after {
   content: '';
@@ -158,9 +167,9 @@ div.finder {
   position: relative;
   padding: 0px 4px;
 }
+
+
 div.find_po_avto, div.find_tires, div.find_disk {
-  position: relative;
-  float: left;
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 10px;
   background-color: #fff;
@@ -169,6 +178,34 @@ div.find_po_avto, div.find_tires, div.find_disk {
   box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
   padding: 10px;
 }
+
+
+div.p_holder {
+  font-size: 10px;
+}
+div.line > div.first > p {
+  display: block;
+  float: left;
+}
+div.find_po_avto div > div.line > div.first::after {
+  content: 'авто:';
+  display: block;
+  float: left;
+  margin-left: 3px;
+}
+
+div.find_po_avto div > div.line > div.none_after::after {
+  content: '';
+}
+div.find_po_avto div.line > div.p_holder::after {
+  content: 'автомобиля:';
+  color: grey;
+  font-size: 10px;
+}
+
+
+
+/*
 div.block_header {
   position: relative;
   text-align: center;
@@ -188,34 +225,31 @@ p.head_info_right {
 div.left_form, div.right_form {
   float: left;
 }
-div.p_holder {
-  float: left;
-}
+
 div.select_holder {
   float: left;
-}
-div.select_holder > div {
-
-}
-div.select_holder > div > select {
-
-}
-div.select_holder > p {
-  display: block;
-  float: left;
-}
-.sel {
+}*/
+div.select_holder {
+  width: 102px;
+  height: 17px;
+  overflow: hidden;
+  position: relative;
   background: url(../img/select-triangle.png) no-repeat right #fff;
-}
-div.select_holder > select {
-  display: block;
-  float: right;
   -webkit-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
   box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
-  width: 60px;
+}
+div.select_holder > select {
+  width: 115%;
+  background: transparent;
 }
 
+div.button_holder > button {
+  background: none;
+  text-decoration: underline;
+  color: grey;
+  border: none;
+}
 
 
 
@@ -226,29 +260,3 @@ div.select_holder > select {
 
 
 /*test*/
-
-
-div.p_holder {
-  float: left;
-}
-div.select_holder1 {
-  float: left;
-  width: 102px;
-  height: 17px;
-  overflow: hidden;
-  position: relative;
-  -webkit-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
-  box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
-}
-div.button_area {
-  background: url(../img/select-triangle.png) no-repeat center #fff;
-  height: 17px;
-  width: 17px;
-  border: 1px solid grey;
-}
-div.select_holder1 select {
-  background: transparent;
-  width: 120%;
-  height: 100%;
-}

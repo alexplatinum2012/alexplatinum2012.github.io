@@ -50,26 +50,24 @@
 
         <div class="finder">
 
-          <form id="header_form" class="" action="index.html" method="get"></form>    <!--try GET-->
 
-          <div class="find_po_avto clearfix">
+
+          <div class="find_po_avto float_left">
+              <form id="header_form_avto" class="" action="test.php" method="post"></form>
 
               <div class="block_header clearfix">
-                  <p class="head_info_left">Диски: </p>
-                  <p class="title">Поиск по автомобилю</p>                           <!-- absolute positioned-->
-                  <p class="head_info_right">Шины: </p>
+                  <p class="head_info float_left">Диски: </p>
+                  <p class="title float_left">Поиск по автомобилю</p>                           <!-- absolute positioned-->
+                  <p class="head_info float_right">Шины: </p>
               </div>
 
-              <div class="left_form">                                            <!-- start left_form-->
-                <div class="p_holder">                                           <!-- start p_holder -->
-                    <p>Марка</p>
-                    <p>Модель</p>
-                    <p>Год выпуска</p>
-                    <p>Комплектация</p>
-                </div>                                                           <!-- end p_holder -->
-                <div class="select_holder">                                      <!-- start select_holder -->
-                  <div>
-                    <select form="header_form" name="vendor[]">
+              <div class="left_form float_left">                                            <!-- start left_form-->
+                <div class="line clearfix">
+                  <div class="first p_holder float_left">
+                      <p>Марка</p>
+                  </div>
+                  <div class="select_holder float_right">
+                    <select form="header_form_avto" name="s_vendor">
                       <option selected value=""></option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -82,8 +80,15 @@
                       <option value="9">9</option>
                     </select>
                   </div>
-                  <div>
-                    <select form="header_form" class="" name="model[]">
+                </div>
+
+                <div class="line clearfix">
+                  <div class="p_holder float_left">
+                      <p>Модель</p>
+                  </div>
+                  <div class="select_holder float_right">
+                    <select form="header_form_avto" name="s_model">
+                      <option selected value=""></option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -95,8 +100,15 @@
                       <option value="9">9</option>
                     </select>
                   </div>
-                  <div>
-                    <select form="header_form" class="" name="year[]">
+                </div>
+
+                <div class="line clearfix">
+                  <div class="p_holder float_left">                                           <!-- start p_holder -->
+                      <p>Год выпуска</p>
+                  </div>
+                  <div class="select_holder float_right">
+                    <select form="header_form_avto" name="s_year">
+                      <option selected value=""></option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -108,8 +120,15 @@
                       <option value="9">9</option>
                     </select>
                   </div>
-                  <div>
-                    <select form="header_form" class="" name="complectation[]">
+                </div>
+
+                <div class="line clearfix">
+                  <div class="none_after p_holder float_left">                                           <!-- start p_holder -->
+                      <p>Комплектация:</p>
+                  </div>
+                  <div class="select_holder float_right">
+                    <select form="header_form_avto" name="s_complectation">
+                      <option selected value=""></option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -121,19 +140,17 @@
                       <option value="9">9</option>
                     </select>
                   </div>
-                </div>                                                           <!-- finish select_holder -->
+                </div>
+
               </div>                                                             <!-- finish left_form -->
 
-              <div class="right_form">                                           <!-- start right_form-->
-                <div class="p_holder">                                           <!-- start p_holder -->
-                    <p>Марка</p>
-                    <p>Модель</p>
-                    <p>Год выпуска</p>
-                    <p>Комплектация</p>
-                </div>                                                           <!-- end p_holder -->
-                <div class="select_holder">                                      <!-- start select_holder -->
-                  <div>
-                    <select form="header_form" name="vendor[]">
+              <div class="right_form float_right">                               <!-- start right_form-->
+                <div class="line clearfix">
+                  <div class="first p_holder float_left">
+                      <p>Марка</p>
+                  </div>
+                  <div class="select_holder float_right">
+                    <select form="header_form_avto" name="d_vendor">
                       <option selected value=""></option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -146,8 +163,15 @@
                       <option value="9">9</option>
                     </select>
                   </div>
-                  <div>
-                    <select form="header_form" class="" name="model[]">
+                </div>
+
+                <div class="line clearfix">
+                  <div class="p_holder float_left">
+                      <p>Модель</p>
+                  </div>
+                  <div class="select_holder float_right">
+                    <select form="header_form_avto" name="d_model">
+                      <option selected value=""></option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -159,8 +183,15 @@
                       <option value="9">9</option>
                     </select>
                   </div>
-                  <div>
-                    <select form="header_form" class="" name="year[]">
+                </div>
+
+                <div class="line clearfix">
+                  <div class="p_holder float_left">
+                      <p>Год выпуска</p>
+                  </div>
+                  <div class="select_holder float_right">
+                    <select form="header_form_avto" name="d_year">
+                      <option selected value=""></option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -172,8 +203,15 @@
                       <option value="9">9</option>
                     </select>
                   </div>
-                  <div>
-                    <select form="header_form" class="" name="complectation[]">
+                </div>
+
+                <div class="line clearfix">
+                  <div class="none_after p_holder float_left">
+                      <p>Комплектация:</p>
+                  </div>
+                  <div class="select_holder float_right">
+                    <select form="header_form_avto" name="d_complectation">
+                      <option selected value=""></option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -185,23 +223,109 @@
                       <option value="9">9</option>
                     </select>
                   </div>
-                </div>                                                           <!-- finish select_holder -->
-              </div>
-              <div class="button_holder">
-                <button type="submit" name="Отправить" form="header_form">1234567</button>
-              </div>                                                           <!-- finish right_form -->
-            </div>                                                               <!-- finish find_po_avto -->
+                </div>
 
-
-
-
-
-
-
-
-            <div class="find_tires clearfix">
-
+                <div class="button_holder float_right">
+                <button type="submit" name="Отправить" form="header_form_avto">поиск...</button>
+                </div>                                                           <!-- finish right_form -->
             </div>
+          </div>                                                               <!-- finish find_po_avto -->
+
+
+
+
+
+
+
+
+            <div class="find_tires float_left">                                   <!-- start find_tires -->
+              <form id="header_form_tires" class="" action="index.html" method="post"></form>
+
+              <div class="block_header clearfix">
+                  <p class="head_info_left">поиск шин: </p>
+              </div>
+              <div class="line clearfix">
+                <div class="p_holder float_left">                                           <!-- start p_holder -->
+                  <p>Размер:</p>
+                </div>
+                <div class="select_holder float_right">
+                  <select form="header_form_tires" class="" name="hsize">
+                    <option selected value=""></option>
+                    <option value="50">50</option>
+                    <option value="55">55</option>
+                    <option value="60">60</option>
+                    <option value="65">65</option>
+                    <option value="70">70</option>
+                    <option value="75">75</option>
+                    <option value="80">80</option>
+                    <option value="85">85</option>
+                    <option value="90">90</option>
+                  </select>
+                </div>
+                <p class="float_right">/</p>
+                <div class="select_holder float_right">
+                  <select form="header_form_tires" class="" name="wsize">
+                    <option selected value="145">145</option>
+                    <option value="150">150</option>
+                    <option value="155">155</option>
+                    <option value="160">160</option>
+                    <option value="165">165</option>
+                    <option value="170">170</option>
+                    <option value="175">175</option>
+                    <option value="180">180</option>
+                    <option value="185">185</option>
+                    <option value="190">190</option>
+                    <option value="195">195</option>
+                    <option value="200">200</option>
+                    <option value="205">205</option>
+                    <option value="210">210</option>
+                    <option value="215">215</option>
+                    <option value="220">220</option>
+                    <option value="225">225</option>
+                    <option value="230">230</option>
+                  </select>
+                </div>
+
+
+              </div>
+
+              <div class="line clearfix">
+                <div class="p_holder float_left">                                           <!-- start p_holder -->
+                  <p>R</p>
+                </div>
+                <div class="select_holder float_right">
+                  <select form="header_form_tires" class="" name="rsize">
+                    <option selected value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="line clearfix">
+                <div class="p_holder float_left">                                           <!-- start p_holder -->
+                  <p>Сезон:</p>
+                </div>
+                <div class="checkbox_holder float_right">
+                  <div><input form="header_form_tires" type="checkbox" name="spring" value="spring">Лето</div>
+                  <div><input form="header_form_tires" type="checkbox" name="winter" value="winter">Зима</div>
+                  <div><input form="header_form_tires" type="checkbox" name="allseason" value="allseason">Всесез</div>
+                </div>
+              </div>
+
+              <div class="button_holder float_right">
+              <button type="submit" name="Отправить" form="header_form_tires">поиск...</button>
+              </div>
+
+            </div>                                                              <!-- finish find_tires -->
+
             <div class="find_disk">
               <p class="title">Поиск дисков</p>
             </div>
