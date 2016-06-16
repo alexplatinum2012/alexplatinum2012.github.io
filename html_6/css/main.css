@@ -210,13 +210,18 @@ div.find_po_avto div.line > div.p_holder::after {
   font-size: 10px;
 }
 
-
-
-/*
 div.block_header {
   position: relative;
   text-align: center;
 }
+p.title {
+  position: absolute;
+  left: 28%;
+}
+
+
+/*
+
 p.head_info_left {
   position: relative;
   float: left;
