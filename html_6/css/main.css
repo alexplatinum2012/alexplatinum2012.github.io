@@ -43,7 +43,7 @@ header {
 
 }
 div.upper_block {
-  padding: 15px 0px 10px;
+  padding: 16px 0px 9px;
   position: relative;;
 }
 
@@ -144,22 +144,78 @@ div.navi {
 }
 
 /* HEADER NAVIGATION MENU */
+div.menu {
+  background-color: #2d3236;
+  background: linear-gradient (to top, #010101, #2d3236);
+  border-radius: 2px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  margin-top: 2px;
+  margin-bottom: 11px;
+  height: 34px;
+  line-height: 32px;
+  padding-left: 124px;
+}
 
 menu > li {
   display: block;
   float: left;
+  border-radius: 28px;
+  /* border: 1px solid red; */
   list-style: none;
+  padding-left: 22px;
+  margin-top: 4px;
+  height: 25px;
+  padding-right: 18px;
+  line-height: 25px;
+}
+menu > li:nth-child(2) {
+  padding: 0px 18px;
+}
+menu > li:nth-child(3), menu > li:nth-child(4) {
+  padding: 0px 15px;
+}
+menu > li:nth-child(5) {
+  padding: 0px 10px;
+}
+menu > li:hover {
+  background: linear-gradient (to top, #0c3357, #1f6787);
+  background-color: #1f6787;
 }
 menu > li > a {
   text-decoration: none;
   height: 100%;
+  font-size: 14px;
+  color: #fff;
 }
 div.menu > div.trash {
   float: right;
+  width: 225px;
 }
-div.menu > div.trash > img, div.menu > div.trash > p {
+div.menu > div.trash > img {
   display: block;
   float: left;
+  line-height: 44px;
+}
+div.menu > div.trash > p {
+  display: block;
+  float: left;
+  margin-left: 9px;
+  font-size: 11px;
+  color: white;
+}
+div.menu > div.trash > p:nth-child(4) {
+  margin-left: 15px;
+}
+div.menu > div.trash > p.digit:last-child {
+  margin-left: 11px;
+}
+div.menu > div.trash > p.digit {
+  margin-left: 3px;
+  font-size: 13px;
+  line-height: 33px;
+  color: lightblue;
 }
 
 /* HEADER FINDER BLOCKS */
@@ -172,12 +228,11 @@ div.finder {
 div.find_po_avto, div.find_tires, div.find_disk {
   float: left;
   border: 1px solid rgba(0,0,0,0.1);
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: #fff;
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-  padding: 10px;
 }
 div.left_form {
   float: left;
@@ -200,6 +255,10 @@ div.find_po_avto div > div.line > div.first::after {
   float: left;
   margin-left: 3px;
 }
+div.find_po_avto {
+  width: 413px;
+  height: 133px;
+}
 
 div.find_po_avto div > div.line > div.none_after::after {
   content: '';
@@ -213,12 +272,25 @@ div.find_po_avto div.line > div.p_holder::after {
 div.block_header {
   position: relative;
   text-align: center;
+  margin-top: 2px;
+  margin-left: 21px;
+  margin-right: 21px;
 }
 p.title {
   position: absolute;
   left: 28%;
 }
-
+p.head_info {
+  font-size: 10px;
+  font-weight: 900;
+}
+p.title {
+  position: absolute;
+  left: 105px;
+  top: -3px;
+  font-size: 12px;
+  font-weight: 900;
+}
 
 /*
 
@@ -227,8 +299,11 @@ p.head_info_left {
   float: left;
 }
 p.title {
-  position: relative;
-  float: left;
+  position: absolute;
+  left: 28%;
+  top: -3px;
+  font-size: 12px;
+  font-weight: 900;
 }
 p.head_info_right {
   position: relative;
