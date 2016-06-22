@@ -182,8 +182,8 @@ menu > li:nth-child(5) {
 menu > li:hover {
   background: linear-gradient (to top, #0c3357, #1f6787);
   background-color: #1f6787;
-}
 menu > li > a {
+}
   text-decoration: none;
   height: 100%;
   font-size: 14px;
@@ -328,7 +328,7 @@ div.select_holder {
   box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
 }
 div.select_holder > select {
-  width: 115%;
+  width: 121%;
   background: transparent;
 }
 div.button_holder {
@@ -381,6 +381,7 @@ ul.nav_list > li > a {
 div.content {
   float: left;
   width: 60%;
+  background-color: grey;
 }
 
 div.container1, div.container2, div.container3 {
@@ -399,9 +400,33 @@ div.nav_right {
   float: left;
   width: 20%;
 }
+div.vendors {
+  margin: 0px 10%;
+}
+div.firm {
+  float: left;
+}
 
+footer {
+  background-color: darkblue;
+  text-align: center;
+}
+footer > menu {
+  background: none;
+}
+menu > li > a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
 
-
-
-
+footer > menu > li:hover {
+  color: lightblue;
+  background: none;
+}
+div.copyright {
+  clear: both;
+}
 /*test*/
