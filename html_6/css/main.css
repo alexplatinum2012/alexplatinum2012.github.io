@@ -13,6 +13,10 @@ body {
   background-color: #fff;
   font-family: arial, sans-serif;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 .float_left {
   display: block;
   float: left;
@@ -71,7 +75,7 @@ background-color: #0d3458;
 -moz-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
 box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
 height: 26px;
-line-height: 25px;
+line-height: 24px;
 font-size: 14px;
 font-family: "lucida_sans_unicoderegular";
 position: absolute;
@@ -86,7 +90,12 @@ div.logo_form {
 
 form.reg {
   float: left;
-  margin-left: 4px;
+  margin-left: 3px;
+}
+form.reg > input {
+  width: 111px;
+  height: 14px;
+  margin-right: 4px;
 }
 form.reg:first-child {
   display: block;
@@ -108,6 +117,18 @@ form.reg:last-child {
 nav {
   display: block;
   float: left;
+}
+nav > a {
+  font-size: 13px;
+  margin-left: 5px;
+}
+nav > a:nth-child(2) {
+  margin-left: -2px;
+}
+nav > a:last-child {
+  margin-left: 20px;
+  margin-right: 13px;
+  text-decoration: underline;
 }
 p.enter {
   display: block;
@@ -134,13 +155,33 @@ p.forgot_password {
 }
 div.navi {
   position: absolute;
-  right: 3px;
+  right: 8px;
+  bottom: 15px;
+  width: 74px;
+  height: 17px;
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 10px;
   background-color: #fff;
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+div.navi > a {
+  display: block;
+  float: left;
+}
+div.navi > a:first-child {
+  margin-left: 8px;
+  margin-bottom: 5px;
+  margin-top: -3px;
+}
+div.navi > a:nth-child(2) {
+  margin-left: 8px;
+  margin-top: -2px;
+}
+div.navi > a:last-child {
+  margin-left: 9px;
+  margin-top: -3px;
 }
 
 /* HEADER NAVIGATION MENU */
@@ -191,22 +232,22 @@ menu > li > a {
 }
 div.menu > div.trash {
   float: right;
-  width: 225px;
+  width: 228px;
 }
 div.menu > div.trash > img {
   display: block;
   float: left;
-  line-height: 44px;
+  margin-top: 9px;
 }
 div.menu > div.trash > p {
   display: block;
   float: left;
-  margin-left: 9px;
+  margin-left: 8px;
   font-size: 11px;
   color: white;
 }
 div.menu > div.trash > p:nth-child(4) {
-  margin-left: 15px;
+  margin-left: 14px;
 }
 div.menu > div.trash > p.digit:last-child {
   margin-left: 11px;
@@ -222,6 +263,7 @@ div.menu > div.trash > p.digit {
 div.finder {
   position: relative;
   padding: 0px 4px;
+  height: 133px;
 }
 
 
@@ -233,9 +275,12 @@ div.find_po_avto, div.find_tires, div.find_disk {
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  height: 100%;
 }
 div.left_form {
   float: left;
+  margin-left: 17px;
+  margin-top: 4px;
 }
 div.right_form {
   float: right;
@@ -244,6 +289,7 @@ div.p_holder {
   display: block;
   float: left;
   font-size: 10px;
+  margin-top: 4px;
 }
 div.line > div.first > p {
   display: block;
@@ -254,6 +300,8 @@ div.find_po_avto div > div.line > div.first::after {
   display: block;
   float: left;
   margin-left: 3px;
+  font-size: 8px;
+  margin-top: 2px;
 }
 div.find_po_avto {
   width: 413px;
@@ -266,22 +314,23 @@ div.find_po_avto div > div.line > div.none_after::after {
 div.find_po_avto div.line > div.p_holder::after {
   content: 'автомобиля:';
   color: grey;
-  font-size: 10px;
+  display: block;
+  font-size: 9px;
+  margin-top: -5px;
 }
 
 div.block_header {
   position: relative;
   text-align: center;
-  margin-top: 2px;
-  margin-left: 21px;
-  margin-right: 21px;
+  margin: 4px 21px 0;
+}
 }
 p.title {
   position: absolute;
   left: 28%;
 }
 p.head_info {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 900;
 }
 p.title {
@@ -341,8 +390,26 @@ div.button_holder > button {
   border: none;
 }
 div.checkbox_holder {
-  float: right;
+  float: left;
+  color: black;
+  font-size: 12px;
+  margin-left: 13px;
 }
+div.checkbox_holder1 {
+  overflow: hidden;
+}
+div.checkbox_holder1 > div {
+  float: left;
+  width: 10px;
+  height: 10px;
+  -webkit-box-shadow: inset 1px 1px 1px 0px rgba(50, 50, 50, 0.77);
+  -moz-box-shadow:    inset 1px 1px 1px 0px rgba(50, 50, 50, 0.77);
+  box-shadow:         inset 1px 1px 1px 0px rgba(50, 50, 50, 0.77);
+  margin: 2px 4px 0 0;
+}
+div.checkbox_holder1 > input {
+    display: none;
+  }
 
 
 
@@ -394,6 +461,7 @@ div.photo {
   border: 1px solid grey;
   border-radius: 5px;
   background-color: white;
+  width: 138px;
 }
 
 div.nav_right {
