@@ -285,11 +285,20 @@ div.left_form {
 div.right_form {
   float: right;
 }
+div.left_form > div.line > div.first {
+  margin-top: 4px;
+  height: 10px;
+}
 div.p_holder {
   display: block;
   float: left;
   font-size: 10px;
-  margin-top: 4px;
+  height: 22px;
+  line-height: 12px;
+  margin-right: 2px;
+}
+div.line {
+  height: 22px;
 }
 div.line > div.first > p {
   display: block;
