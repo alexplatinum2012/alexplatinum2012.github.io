@@ -43,6 +43,12 @@ div#wrapper {
   line-height: 33px;
   color: #fff;
 }
+fl_right:after {
+  display: block;
+  float: right;
+  content: '';
+  background-image: url(../image/invent-icon.png);
+}
 .fl_right > img {
   float: left;
   margin-top: 6px;
@@ -98,6 +104,10 @@ header > ul > li > a {
   padding: 0px 10px;
   line-height: 33px;
 }
+header > ul > li:first-child {
+  padding-right: 23px;
+  border-right: 1px solid #ccc;
+}
 header > ul > li.active > a{
   background-color: #4eabda;
   color: #fff;
@@ -106,7 +116,7 @@ header > ul > li.active > a{
 header > ul > li:hover > a {
   background-color: #4eabda;
   color: #fff;
-  cursor: default;
+  cursor: pointer;
 }
 /* CONTENT */
 section {
