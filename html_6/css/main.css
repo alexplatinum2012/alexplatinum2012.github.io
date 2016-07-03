@@ -277,13 +277,111 @@ div.find_po_avto, div.find_tires, div.find_disk {
   box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
   height: 100%;
 }
+div.find_tires {
+  margin-left: 14px;
+  width: 191px;
+}
+div.find_disk {
+  margin-left: 10px;
+  width: 265px;
+}
 div.left_form {
   float: left;
-  margin-left: 17px;
+  margin-left: 18px;
+  margin-top: 2px;
+  padding-right: 15px;
+}
+div.find_disk .left_form {
+  margin-left: 8px;
+  border-right: 1px solid #aaa;
+  height: 107px;
+  padding-right: 14px;
+}
+div.find_disk .left_form .line {
+  margin-left: 7px;
+}
+div.find_disk .first {
+  margin-right: 15px;
+}
+div.find_disk .select_holder {
+  width: 55px;
+  float: left;
+}
+div.find_disk .second {
+  margin-top: -2px;
+  width: 89px;
+}
+div.find_disk .second::after {
+  content: 'крепежных отверстий';
+  color: grey;
+  display: block;
+  font-size: 10px;
+  margin-top: -4px;
+  line-height: 11px;
+  white-space: pre-line;
+}
+div.find_disk .second + .select_holder {
+  margin-top: 10px;
+  width: 48px;
+}
+div.find_disk .third {
+  margin-top: 1px;
+  width: 89px;
+}
+div.find_disk .third + .select_holder {
+  margin-top: 15px;
+}
+div.find_disk .third::after {
+  content: 'расположения крепежных отверстий';
+  color: grey;
+  display: block;
+  font-size: 10px;
+  margin-top: -4px;
+  line-height: 11px;
+  white-space: pre-line;
+}
+div.find_disk .right_form .block_header {
+    width: 50px;
+    text-align: left;
+    margin-top: 4px;
+}
+div.find_disk .right_form .block_header::after {
+  content: '(диаметр центрального отверстия):';
+  color: grey;
+  display: block;
+  font-size: 9px;
+  margin-top: -1px;
+  line-height: 8px;
+  white-space: pre-line;
+}
+div.find_disk .right_form p.head_info {
+  font-size: 10px;
+  font-weight: 100;
+}
+div.find_disk .right_form .line_first {
+  margin-top: 28px;
+  margin-left: 1px;
+}
+div.find_disk .line div.et p {
+  margin-top: 6px;
+  font-size: 10px;
+}
+div.find_disk .line div.et::after {
+  content: '(вылет диска):';
+  color: grey;
+  display: block;
+  font-size: 9px;
+  margin-top: -1px;
+  line-height: 8px;
+  white-space: pre-line;
+}
+div.find_disk .line div.et + .select_holder {
   margin-top: 4px;
+  margin-left: 1px;
 }
 div.right_form {
-  float: right;
+  float: left;;
+  margin-left: 10px;
 }
 div.left_form > div.line > div.first {
   margin-top: 4px;
@@ -304,13 +402,27 @@ div.line > div.first > p {
   display: block;
   float: left;
 }
-div.find_po_avto div > div.line > div.first::after {
+div.right_form > div.line > div.first > p {
+  display: block;
+  float: left;
+  line-height: 21px
+}
+div.find_po_avto > div.left_form > div.line > div.first::after {
   content: 'авто:';
   display: block;
   float: left;
   margin-left: 3px;
   font-size: 8px;
   margin-top: 2px;
+}
+div.find_po_avto > div.right_form > div.line > div.first::after {
+  content: 'авто:';
+  display: block;
+  float: left;
+  margin-left: 3px;
+  font-size: 8px;
+  margin-top: 2px;
+  line-height: 17px;
 }
 div.find_po_avto {
   width: 413px;
@@ -319,6 +431,9 @@ div.find_po_avto {
 
 div.find_po_avto div > div.line > div.none_after::after {
   content: '';
+}
+div.none_after > p {
+  line-height: 15px;
 }
 div.find_po_avto div.line > div.p_holder::after {
   content: 'автомобиля:';
@@ -331,7 +446,15 @@ div.find_po_avto div.line > div.p_holder::after {
 div.block_header {
   position: relative;
   text-align: center;
-  margin: 4px 21px 0;
+  margin: 3px 21px 1px 21px;
+}
+div.find_disk div.block_header {
+  margin-left: 0px;
+  margin-top: -6px;
+  font-variant: small-caps;
+}
+div.find_disk p.head_info {
+  font-size: 15px;
 }
 }
 p.title {
@@ -342,6 +465,15 @@ p.head_info {
   font-size: 11px;
   font-weight: 900;
 }
+div.find_tires div.block_header {
+    margin-left: 9px;
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+div.find_tires p.head_info {
+  font-size: 10px;
+  line-height: 12px;
+}
 p.title {
   position: absolute;
   left: 105px;
@@ -349,7 +481,20 @@ p.title {
   font-size: 12px;
   font-weight: 900;
 }
-
+div.find_tires .first > p {
+  margin-left: 12px;
+  line-height: 25px;
+}
+div.find_tires .second {
+  margin-left: 44px;
+  margin-top: 6px;
+  margin-right: 0px;
+  font-size: 12px;
+}
+div.find_tires .third {
+  margin-left: -39px;
+  margin-top: 2px;
+}
 /*
 
 p.head_info_left {
@@ -386,9 +531,31 @@ div.select_holder {
   box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
 }
 div.select_holder > select {
-  width: 121%;
+  width: 130%;
   background: transparent;
 }
+div.find_tires .select_holder {
+  float: left;
+  margin-left: 6px;
+  margin-right: 7px;
+  width: 49px;
+  height: 17px;
+  overflow: hidden;
+  position: relative;
+  background: url(../img/select-triangle.png) no-repeat right #fff;
+  -webkit-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.75);
+}
+div.find_tires .sec {
+  margin-top: 2px;
+  width: 42px;
+}
+div.find_tires div.select_holder > select {
+  width: 130%;
+  background: transparent;
+}
+
 div.button_holder {
   float: right;
 }
@@ -397,12 +564,22 @@ div.button_holder > button {
   text-decoration: underline;
   color: grey;
   border: none;
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+div.find_tires .button_holder {
+  float: right;
+  margin-top: 18px;
+  margin-right: 13px;
 }
 div.checkbox_holder {
   float: left;
   color: black;
   font-size: 12px;
-  margin-left: 13px;
+  margin-left: 5px;
+  margin-top: 3px;
 }
 div.checkbox_holder1 {
   overflow: hidden;
@@ -422,18 +599,22 @@ div.checkbox_holder1 > input {
 
 
 
-
+.wrap_nav_content {
+  margin-top: 17px;
+}
 /*nav_left content nav_right*/
 
 div.nav_left {
   float: left;
-  width: 20%;
+  width: 21%;
+  margin-top: 4px;
 }
 
 div.nav_title{
   border-radius: 20px;
   border: 1px solid grey;
-  line-height: 20px;
+  line-height: 24px;
+  width: 180px;
 }
 
 div.head {
@@ -456,7 +637,7 @@ ul.nav_list > li > a {
 
 div.content {
   float: left;
-  width: 60%;
+  width: 58%;
   background-color: grey;
 }
 
@@ -475,7 +656,7 @@ div.photo {
 
 div.nav_right {
   float: left;
-  width: 20%;
+  width: 21%;
 }
 div.vendors {
   margin: 0px 10%;

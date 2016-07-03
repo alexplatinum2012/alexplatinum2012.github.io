@@ -25,8 +25,7 @@ body {
   font-weight: 200;
 }
 div#wrapper {
-  width: 1215px;
-  margin: 0px auto;
+  width: 100%;
 }
 .clearfix:after {
   content: '';
@@ -43,16 +42,21 @@ div#wrapper {
   line-height: 33px;
   color: #fff;
 }
-fl_right:after {
+.invent::before {
   display: block;
-  float: right;
-  content: '';
-  background-image: url(../image/invent-icon.png);
-}
-.fl_right > img {
   float: left;
-  margin-top: 6px;
-  margin-right: 6px;
+  content: '';
+  width: 20px;
+  height: 35px;
+  margin-right: 10px;
+  background: url(../img/invent-icon.png) no-repeat center;
+}
+.fl_right > a {
+  display: block;
+  float: left;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
 }
 .fl_right:hover {
   /* DO NOT WORKING */

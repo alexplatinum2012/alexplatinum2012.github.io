@@ -242,10 +242,10 @@
               <form id="header_form_tires" class="" action="index.html" method="post"></form>
 
               <div class="block_header clearfix">
-                  <p class="head_info float_left">ПОИСК ШИН: </p>
+                  <p class="head_info float_left">ПОИСК&nbsp;&nbsp;ШИН </p>
               </div>
               <div class="line clearfix">
-                <div class="p_holder">                                           <!-- start p_holder -->
+                <div class="p_holder first">                                           <!-- start p_holder -->
                   <p>Размер:</p>
                 </div>
                 <div class="select_holder">
@@ -262,7 +262,7 @@
                     <option value="90">90</option>
                   </select>
                 </div>
-                <p class="float_right">/</p>
+                <p class="float_left">/</p>
                 <div class="select_holder">
                   <select form="header_form_tires" class="" name="wsize">
                     <option selected value="145">145</option>
@@ -289,10 +289,10 @@
               </div>
 
               <div class="line clearfix">
-                <div class="p_holder">                                           <!-- start p_holder -->
+                <div class="p_holder second">                                           <!-- start p_holder -->
                   <p>R</p>
                 </div>
-                <div class="select_holder">
+                <div class="select_holder sec">
                   <select form="header_form_tires" class="" name="rsize">
                     <option selected value="12">12</option>
                     <option value="13">13</option>
@@ -309,7 +309,7 @@
               </div>
 
               <div class="line clearfix">
-                <div class="p_holder">                                           <!-- start p_holder -->
+                <div class="p_holder third">                                           <!-- start p_holder -->
                   <p>Сезон:</p>
                 </div>
                 <div class="checkbox_holder">
@@ -344,14 +344,14 @@
               <div class="left_form">                                           <!-- start left_form -->
 
                 <div class="block_header clearfix">
-                    <p class="head_info float_left">поиск дисков: </p>
+                    <p class="head_info float_left">поиск дисков</p>
                 </div>
                 <div class="line clearfix">
                   <div class="first p_holder">                                           <!-- start p_holder -->
-                    <p>Диаметр</p>
+                    <p>Диаметр диска:</p>
                   </div>
                   <div class="select_holder">
-                    <select form="header_form_tires" class="" name="rsize">
+                    <select form="header_form_disks" class="" name="rdisk">
                       <option value="12">12</option>
                       <option value="13">13</option>
                       <option selected value="14">14</option>
@@ -366,7 +366,7 @@
                   </div>
                 </div>
                 <div class="line clearfix">
-                  <div class="p_holder">                                           <!-- start p_holder -->
+                  <div class="p_holder second">                                           <!-- start p_holder -->
                     <p>Колличество</p>
                   </div>
                   <div class="select_holder">
@@ -380,11 +380,11 @@
                   </div>
                 </div>
                 <div class="line clearfix">
-                  <div class="p_holder">                                           <!-- start p_holder -->
+                  <div class="p_holder third">                                           <!-- start p_holder -->
                     <p>Диаметр</p>
                   </div>
                   <div class="select_holder">
-                    <select form="header_form_tires" class="" name="boltsize">
+                    <select form="header_form_tires" class="" name="diametr">
                       <option selected value="12">12</option>
                       <option value="13">13</option>
                       <option value="14">14</option>
@@ -399,10 +399,47 @@
                   </div>
                 </div>
 
-              </div>
-                                                                       <!-- finish left_form -->
+              </div>                                                            <!-- finish left_form -->
+
+              <div class="right_form">                                          <!-- start right_form -->
+                <div class="block_header clearfix">
+                    <p class="head_info">ДЦО</p>
+                </div>
+                <div class="line_first clearfix">
+                  <div class="select_holder">
+                    <select form="header_form_tires" class="" name="dco">
+                      <option selected value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="line clearfix">
+                  <div class="et">
+                    <p>ET</p>
+                  </div>
+                  <div class="select_holder">
+                    <select form="header_form_tires" class="" name="et">
+                      <option selected value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>                                                            <!-- finish right_form -->
 
             </div>                                                              <!-- finish find_disk -->
+
 
           </div>                                                                <!-- finish finder -->
       </header>                                                                 <!-- finish header -->
