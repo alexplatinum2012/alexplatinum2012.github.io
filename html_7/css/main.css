@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.body-header, .body-section, .body-footer {
+  overflow: hidden;
+  width: 100%;
+}
+.u_wrapper {
+  overflow: hidden;
+  widtht: 960px;
+  max-width: 960px;
+  margin: auto;
+}
+
+
+/*  H E A D E R  */
+.container-logo {
+  position: relative;
+  float: left;
+  width: 20%;
+}
+.container-nav {
+  position: relative;
+  float: right;
+  width: 80%;
+}
+
+.header-slider {
+  background-color: black transparent;
+}
+
+.container-article {
+  float: left;
+  width: 60%;
+}
+.container-iphone {
+  float: left;
+  width: 40%;
+}
+
+
+
+
+/*  S E C T I O N  */
+
+.container-blurbs {
+  width: 28%;
+  float: left;
+  margin-left: 60px;
+}
+.container-blurbs:first-child {
+  margin-left: 10px;
+}
+.blurbs-icon {
+  float: left;
+  width: 30px;
+}
+.blurbs-about {
+  margin-left: 50px;
+}
+.blurbs-read_more {
+  float: right;
+  margin-top: 30px;
+}
