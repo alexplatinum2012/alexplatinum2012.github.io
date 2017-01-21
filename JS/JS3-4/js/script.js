@@ -4,6 +4,7 @@
 var obj = {
 
   wrapper   : document.createElement('div'),
+  form   : document.createElement('form'),
   titleOfTest : document.createElement('div'),
   button   : document.createElement('button'),
 
@@ -43,6 +44,9 @@ var obj = {
     this.append(document.body, this.wrapper);
     this.wrapper = this.findElement(document, this.wrapper.className);
 
+    this.setAttribute('id', "formID");
+    this.setAttribute('method', "GET");
+    this.append(this.wrapper, this.form);
 
     this.addClass(this.titleOfTest, 'titleOfTest');
     this.addText(this.titleOfTest, "Тест по программированию");
@@ -79,6 +83,7 @@ var obj = {
         inputChkBox.setAttribute("type", "checkbox");
         inputChkBox.setAttribute("name", "q" + i + j);
         inputChkBox.setAttribute("id", "q" + i + j);
+        inputChkBox.setAttribute("form", "formID");
         this.styling(inputChkBox, "float:left; margin-right:20px; color:red")
         this.append(checkboxBlock, inputChkBox);
 
@@ -90,6 +95,8 @@ var obj = {
 
     this.addClass(this.button, "button");
     this.addText(this.button, "Проверить мои результаты");
+    this.button.setAttribute("type", "submit");
+    this.button.setAttribute("form", "formID");
     this.styling(this.button, "margin: 2% 30%; width: 200px; background-color: aliceblue; border-radius: 3px; border: 2px solid")
     this.append(this.wrapper, this.button);
     //this.button = this.findElement(this.wrapper, this.button.className);
