@@ -44,8 +44,8 @@ var obj = {
     this.append(document.body, this.wrapper);
     this.wrapper = this.findElement(document, this.wrapper.className);
 
-    this.setAttribute('id', "formID");
-    this.setAttribute('method', "GET");
+    this.form.setAttribute('id', "formID");
+    this.form.setAttribute('method', "GET");
     this.append(this.wrapper, this.form);
 
     this.addClass(this.titleOfTest, 'titleOfTest');
