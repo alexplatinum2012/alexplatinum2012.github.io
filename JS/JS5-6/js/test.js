@@ -99,10 +99,12 @@ function buttonChange() {
       this.classList.add("btn-info");
       this.textContent = "Continue";
       timer.rounderPause();
-      tab.innerHTML += "<tr><td>" + ++counter + "</td><td>Stop</td><td>" + timer.hour.textContent + ":" + timer.min.textContent + ":" + timer.sec.textContent + ":" + timer.ms.textContent + "</td></tr>";
+      //tab.innerHTML += "<tr><td>" + ++counter + "</td><td>Stop</td><td>" + timer.hour.textContent + ":" + timer.min.textContent + ":" + timer.sec.textContent + ":" + timer.ms.textContent + "</td></tr>";
+      document.getElementsByClassName("p")[0].innerHTML += " " + ++counter + " " + " Stop " + timer.hour.textContent + " : " + timer.min.textContent + " : " + timer.sec.textContent + " : " + timer.ms.textContent + "<br>";
 
     case "split" :
-    tab.innerHTML += "<tr><td>" + ++counter + "</td><td>Split</td><td>" + timer.hour.textContent + ":" + timer.min.textContent + ":" + timer.sec.textContent + ":" + timer.ms.textContent + "</td></tr>";
+      //document.getElementsByClassName("p")[0].innerHTML += "<p>" + ++counter + "</p>" + "<p>Split</p><p>" + timer.hour.textContent + "</p>:<p>" + timer.min.textContent + "</p>:<p>" + timer.sec.textContent + "<p>:<p>" + timer.ms.textContent + "</p>\n";
+      document.getElementsByClassName("p")[0].innerHTML += " " + ++counter + " " + " Split " + timer.hour.textContent + " : " + timer.min.textContent + " : " + timer.sec.textContent + " : " + timer.ms.textContent + "<br>";
 
     case "clear" :
       if(start.classList.contains("btn-danger") || start.classList.contains("btn-info")) {
@@ -116,7 +118,8 @@ function buttonChange() {
         timer.rounderStop();
       }
       break;
+    }
   }
-}
 
-start.addEventListener("click", buttonChange);
+  start.addEventListener("click", buttonChange);
+      //document.getElementsByClassName("p")[0].innerHTML += "<p>" + ++counter + "</p>" + "<p>Stop</p><p>" + timer.hour.textContent + "</p>:<p>" + timer.min.textContent + "</p>:<p>" + timer.sec.textContent + "<p>:<p>" + timer.ms.textContent + "</p>\n";

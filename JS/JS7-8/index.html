@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<title>
+</title>
+<link rel="stylesheet" href="css/main.css"/>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<body>
+<div class="wrapper"></div>
+	<div class="holder">
+		<div class="nav-tab">
+			<ul class="tab">
+				<li class="tab-item" name="first">Статья 1</li>
+				<li class="tab-item" name="second">Статья 2</li>
+				<li class="tab-item" name="third">Статья 3</li>
+				<li class="tab-item" name="fourth">Статья 4</li>
+				<li class="tab-item" name="fifth">Форма</li>
+			</ul>
+		</div>
+		<div class="article first"><img src="img/1.jpg"></div>
+		<div class="article second"><img src="img/2.jpg"></div>
+		<div class="article third"><img src="img/3.jpg"></div>
+		<div class="article fourth"><img src="img/4.jpg"></div>
+		<div class="article fifth">
+			<form>
+			  <fieldset>
+				<div>
+				  <label><p>Firstname</p><input type="text"></label>
+				  <p class="hint">Please provide your firstname.</p>
+				</div>
+				<div>
+				  <label><p>Lastname</p><input type="text"></label>
+				  <p class="hint">Please provide also your lastname.</p>
+				</div>
+				<div>
+				  <label><p>Address</p><input type="text"></label>
+				  <p class="hint">Your home or work address.</p>
+				</div>
+			  </fieldset>
+			</form>
+			<button value="Show all hints">Show all hints</button>
+		</div>
+	</div>
+	<script src="JS7-8.js"></script>
+	<script>
+		$(function(){
+			$(".first").show();
+			$(".tab-item")
+				.on("click", function(){
+					$(".tab-item").css("background", "");
+					var $cName = "." + $(this).attr("name");
+					$(this).css("background", "#abcdef");
+					//alert($cName);
+					$(".article:not(" + $cName + ")").hide("slow");
+					$(".article" + $cName).show("slow");
+					console.log($(".article"));
+					}
+				);
+
+			var $visible = function(){
+				var $text = $(this).attr("title");
+				$(this).parent().next().show("slow", function(){
+					$(this).css("margin-right", "155px");
+				});
+			}
+			var $invisible = function(){
+				$(this).parent().next().hide();
+			}
+			$("input").hover($visible, $invisible);
+
+
+			$("button").on("click", function(){
+				$(".hint").show("slow", function(){
+					$(".hint").css("margin-right", "155px");
+				});;
+			});
+		}
+		);
+	</script>
+</body>
+</html>

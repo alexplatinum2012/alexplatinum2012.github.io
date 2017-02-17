@@ -1,0 +1,116 @@
+
+ // JS HW 7-8 schoology
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div.wrapper {
+
+}
+
+div.holder {
+	background: #ddd;
+	width: 60%;
+	margin: 10px auto;
+	border-radius: 5px;
+    box-shadow: 0px 0px 20px 2px rgba(1,1,1,1);
+}
+
+div.nav-tab {
+	background: #eee;
+	margin: 5px 5px 0px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0;
+}
+
+.article {
+	margin: 0px 5px 5px;
+	box-sizing: border-box;
+	display: none;
+}
+
+img {
+	margin: 5px auto;
+	width: 100%;
+}
+ul.tab {
+	list-style-type: none;
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+}
+li.tab-item {
+	display: inline-block;
+	float: left;
+	width: 130px;
+	text-align: center;
+	padding-top: 13px;
+	border: 1px solid #abc;
+	border-bottom: 0;
+	border-radius: 5px 5px 0px 0px;
+	margin: 0px 3px;
+	height: 100%;
+	background: #eee;
+	box-sizing: border-box;
+}
+li.tab-item:hover {
+	background: #ddd;
+	cursor: pointer;
+}
+
+li .tab-item:active {
+	background: black;
+}
+
+form {
+	width: 80%;
+	margin: 5px auto;
+	box-sizing: border-box;
+	border: 1px solid #888888;
+}
+form label {
+    display: inline-block;
+	width: 250px;
+	margin-bottom: 35px;
+  }
+label input {
+	float: right;
+}
+label p  {
+	float: left;
+	margin: 0;
+}
+.hint {
+	display: none;
+	float: right;
+	margin: 0;
+	width: 120px;
+	font-size: 13px;
+	box-shadow: 5px 5px 5px #888888;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #888888;
+	padding: 5px;
+}
+button {
+	margin-left: 75px;
+  margin-bottom: 20px;
+}
+
+/*
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+transform-style: preserve-3d;
+-webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+-moz-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+-o-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+-ms-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+
+*/
