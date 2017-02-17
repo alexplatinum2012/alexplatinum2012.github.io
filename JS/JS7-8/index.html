@@ -53,7 +53,7 @@
 					var $cName = "." + $(this).attr("name");
 					$(this).css("background", "#abcdef");
 					//alert($cName);
-					$(".article:not(" + $cName + ")").hide("slow");
+					$(".article:not(" + $cName + ")").hide();
 					$(".article" + $cName).show("slow");
 					console.log($(".article"));
 					}
