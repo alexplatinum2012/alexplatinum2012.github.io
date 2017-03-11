@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Supermolot;
+    font-weight: normal;
+    src: url(fonts/Supermolot.otf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+   font-family: Supermolot;
+   font-weight: lighter;
+   src: url(fonts/Supermolot_Light.otf); /* Путь к файлу со шрифтом */
+  }
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e4e0d6;
+}
+
+/*MOTOBYKER*/
+div.img-wrapper {
+    z-index: 1;
+}
+div.img-wrapper img {
+  width: 100%;
+  max-width: 1400px;*/
+}
+/*END MOTOBYKER*/
+
+/*WRAPPER*/
+div.wrapper {
+  position: absolute;
+  top: 27px;
+  margin: 0px 115px 62px;
+  width: calc(100% - 230px);
+  max-width: 1170px;
+  z-index: 10;
+
+  background-color: grey;
+}
+
+header.header {
+  width: 100%;
+  height: 120px;
+}
+
+div.header-logo {
+  position: relative;
+  float: left;
+  width: 170px;
+  height: 100%;
+  background-color: #ed1651;
+}
+
+div.header-menu {
+  position: relative;
+  float: left;
+  width: calc(100% - 358px);
+  max-width: 812px;
+  height: 61px;
+  background-color: #fff;
+  /*border-bottom: 1px solid #f1f1f1;*/
+}
+ul.inline-list {
+  list-style-type: none;
+  height: 100%;
+}
+ul li.inline-list-item {
+  display: inline-block;
+  height: 100%;
+  width: 130px;
+  max-width: 25%;
+}
+li.inline-list-item a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 23px;
+  padding-left: 16px;
+  font-size: 14px;
+  font-family: Supermolot;
+  font-weight: normal;
+  text-decoration: none;
+  color: #000000;
+}
+li.inline-list-item a:hover {
+  background-color: #021563;
+  color: #f8f8f8;
+}
+
+
+div.header-right {
+  position: relative;
+  float: left;
+  width: 188px;
+  height: 118px;
+  background-color: #fff;
+}
+div.right-user {
+  width: 100%;
+  height: 61px;
+}
+div.user-icon {
+  position: relative;
+  float: left;
+}
+.right-user ul li {
+  display: inline-block;
+  height: 100%;
+  padding-top: 23px;
+  margin-left: 7px;
+  margin-right: 11px;
+}
+.right-user ul li:first-child a {
+  color: #ed1651;
+}
+.right-user ul li a {
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: Supermolot;
+
+  text-decoration: dashed;
+}
+
+
+div.right-cart {
+  width: 100%;
+  height: 57px;
+  background-color: #021563;
+}
+/*END WRAPPER*/
