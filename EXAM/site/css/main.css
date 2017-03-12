@@ -5,6 +5,7 @@
    }
 @font-face {
    font-family: Supermolot;
+   font-style: normal;
    font-weight: lighter;
    src: url(fonts/Supermolot_Light.otf); /* Путь к файлу со шрифтом */
   }
@@ -13,7 +14,24 @@
    font-weight: bold;
    src: url(fonts/Supermolot_Bold.otf); /* Путь к файлу со шрифтом */
   }
-
+@font-face {
+   font-family: Supermolot;
+   font-style: italic;
+   font-weight: bold;
+   src: url(fonts/Supermolot_Bold_Italic.otf); /* Путь к файлу со шрифтом */
+  }
+font-face {
+   font-family: Supermolot;
+   font-style: italic;
+   font-weight: lighter;
+   src: url(fonts/Supermolot_Light_Italic.otf); /* Путь к файлу со шрифтом */
+  }
+font-face {
+   font-family: Supermolot;
+   font-style: italic;
+   font-weight: normal;
+   src: url(fonts/Supermolot_Italic.otf); /* Путь к файлу со шрифтом */
+  }
 
 
 
@@ -47,7 +65,6 @@ div.wrapper {
   max-width: 1170px;
   z-index: 10;
 
-  background-color: grey;
 }
 
 header.header {
@@ -210,5 +227,187 @@ div.cart-icon {
   box-sizing: border-box;
   width: 57px;
   margin-top: 12px;
+}
+
+
+div.promo {
+  width: 100%;
+  /*height: 486px;*/
+}
+p.promo-first-line {
+  display: block;
+  margin-top: 87px;
+  font-family: Supermolot;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 63px;
+  color: #000000;
+}
+p.promo-second-line {
+  display: block;
+  font-family: Supermolot;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 72px;
+  line-height: 63px;
+  color: #000000;
+}
+p.promo-third-line {
+  display: block;
+  font-family: Supermolot;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.promo div.promo-look button {
+  font-family: Supermolot;
+  font-weight: normal;
+  font-size: 18px;
+  color: #ffffff;
+  height: 53px;
+  width: 244px;
+  border: 3px solid #ed1651;
+  margin-left: 270px;
+  margin-top: 6px;
+  background-color: transparent;
+}
+
+section.products {
+  margin-top: 165px;
+  background-color: #f6f6f6;
+}
+header.products-header {
+  width: 100%;
+  height: 76px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+p.header-title {
+  display: block;
+  position: relative;
+  float: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-family: Supermolot;
+  font-size: 24px;
+  color: #021562;
+}
+div.right-arrow {
+  position: relative;
+  float: right;
+  margin: 32px 30px 29px 12px;
+}
+div.left-arrow {
+  position: relative;
+  float: right;
+  margin-top: 32px;
+}
+
+div.product-preview {
+  position: relative;
+  float: left;
+  margin: 3px 3px 0px 0px;
+  width: 290px;
+  height: 322px;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.12);
+  -moz-box-shadow:    0px 3px 3px 0px rgba(50, 50, 50, 0.12);
+  box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.12);
+}
+/*test*/
+div.product-preview:nth-child(4n) {
+  margin: 3px 0px 0px 0px;
+}
+/*end test*/
+.product-preview .product-img {
+  width: 100%;
+  height: 236px;
+  font-family: Supermolot;
+  font-size: 24px;
+  background-color: #d1d3d4;
+}
+.product-preview .product-description {
+  width: 100%;
+  height: 86px;
+  background-color: #ffffff;
+}
+p.product-name {
+  display: block;
+  position: relative;
+  float: left;
+  margin-left: 30px;
+  margin-top: 29px;
+  font-family: Supermolot;
+  font-size: 14px;
+  line-height: 18px;
+  color: #555555;
+}
+div.product-price {
+  display: block;
+  position: relative;
+  float: right;
+  margin-right: 30px;
+  margin-top: 29px;
+  font-family: Supermolot;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #ed1651;
+}
+p.product-price, p.curr {
+  display: block;
+  position: relative;
+  float: left;
+}
+
+
+section.promo-line {
+  clear: both;
+  width: 100%;
+  height: 311px;
+}
+.promo-line div > img {
+  z-index: 10;
+}
+.promo-line div > div.promo-title {
+  position: absolute;
+  bottom: 27px;
+  left: 19px;
+  z-index: 11px;
+}
+.promo-title p.first-line {
+  font-family: Supermolot;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+}
+.promo-title p.second-line {
+  font-family: Supermolot;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 32px;
+  line-height: 36px;
+}
+div.first-promo, div.second-promo {
+  position: relative;
+  float: left;
+  width: 292px;
+  height: 100%;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.12);
+  -moz-box-shadow:    0px 3px 3px 0px rgba(50, 50, 50, 0.12);
+  box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.12);
+}
+div.third-promo {
+  position: relative;
+  float: left;
+  width: calc(100% - 584px);
+  max-width: 586px;
+  height: 100%;
+  overflow: hidden;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.12);
+  -moz-box-shadow:    0px 3px 3px 0px rgba(50, 50, 50, 0.12);
+  box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.12);
 }
 /*END WRAPPER*/
